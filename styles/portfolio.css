@@ -272,8 +272,11 @@ textarea {
 
     .footer-column {
         width: 100%;
+        
     }
-
+   .contact{
+    margin-left: 50px;
+   }
     .contact input[type='text'],
     .contact input[type='email'],
     textarea {
