@@ -216,10 +216,13 @@ footer {
 .footer-column {
     width: 50%;
 }
-.social-links a{
+
+.social-links a {
     margin-right: 24px;
 }
-.contact input[type='text' ], .contact input[type='email'],
+
+.contact input[type='text'],
+.contact input[type='email'],
 textarea {
     display: block;
     margin-bottom: 24px;
@@ -236,16 +239,71 @@ textarea {
 /* Responsive Styles */
 
 /* Mobile Devices */
-.hide{
+.hide {
     display: none;
 }
 
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
     
-    .skill-container{
+    .header{
+        background-image: none;
+    }
+    .banner .profile-pic{
+        width: 300px;
+        height: 300px;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    
+    nav, .banner, .skill-container,
+    .resume-container, .about-info-container, 
+    footer {
         flex-direction: column;
     }
+
     #what-i-do-description {
         padding: 20px;
+    }
+
+    footer, .about {
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact input[type='text'],
+    .contact input[type='email'],
+    textarea {
+        width: 70%;
+    }
+    .social-links {
+        text-align: center;
+        
+    }
+
+}
+
+/* Tablet Devices */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .skill-container{
+        flex-wrap: wrap;
+    }
+
+    footer {
+        padding: 30px;
+    }
+    .contact input[type='text'],
+    .contact input[type='email'],
+    textarea {
+        width: 70%;
+    }
+    .social-links {
+        text-align: center;
+        
     }
 }
